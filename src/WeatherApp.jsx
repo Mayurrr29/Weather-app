@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import weatherImage from "./assets/weatherImage.jpg";
 
 const WeatherApp = () => {
   const [city, setCity] = useState("Gujarat");
@@ -71,7 +72,7 @@ const WeatherApp = () => {
                 <div className="card bg-dark text-white" style={{ borderRadius: "40px" }}>
                   <div className="bg-image" style={{ borderRadius: "35px" }}>
                     <img
-                      src="https://t4.ftcdn.net/jpg/08/72/86/37/240_F_872863703_x49hishnaZUrrX2nMmWu6x0QSGYIKsck.jpg"
+                      src={weatherImage}
                       className="card-img"
                       alt="Weather depiction"
                     />
